@@ -9,6 +9,7 @@ public class QuickUnionUF {
     }
     private int root(int i) {
         while (i != id[i]) {
+            id[i] = id[id[i]];
             i = id[i];
         }
         return i;
@@ -20,6 +21,14 @@ public class QuickUnionUF {
         int rootP = root(p);
         int rootQ = root(q);
         if (rootP == rootQ) return;
+//        if(id[rootP]<id[rootQ]){
+//            id[rootP]=id[rootQ];
+//            id[rootQ]+=rootP;
+//        }else{
+//            id[rootQ]=id[rootP];
+//            id[rootP]+=rootQ;
+//        }
+
         id[rootP] = rootQ;
     }
 }
