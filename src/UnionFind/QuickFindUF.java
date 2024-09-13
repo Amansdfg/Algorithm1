@@ -1,5 +1,5 @@
 package UnionFind;
-
+// Quick find
 public class QuickFindUF {
     private  int[] id;
     public QuickFindUF(int N) {

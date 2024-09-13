@@ -1,7 +1,7 @@
 package UnionFind;
 
 import java.util.Scanner;
-
+//Dynamic-connectivity client
 public class Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -18,3 +18,7 @@ public class Test {
         uf.print();
     }
 }
+
+//algorithm   initialize union  find
+//quick-find  N         N       1
+//quick-union N         N       N
