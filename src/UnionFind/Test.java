@@ -1,9 +1,13 @@
 package UnionFind;
 
+import java.util.HashSet;
 import java.util.Scanner;
 //Dynamic-connectivity client
 public class Test {
     public static void main(String[] args) {
+        HashSet<Integer> nums=new HashSet<>();
+        Integer[] aman=(Integer[]) nums.toArray();
+        int[] numbers = aman;
         Scanner sc = new Scanner(System.in);
         QuickFindUF uf = new QuickFindUF(10);
         for (int i = 0; i < 10; i++) {
