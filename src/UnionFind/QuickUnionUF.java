@@ -13,6 +13,7 @@ public class QuickUnionUF {
             i = id[i];
         }
         return i;
+
     }
     public boolean connected(int p, int q) {
         return root(p) == root(q);
